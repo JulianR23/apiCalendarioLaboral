@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <modelVersion>4.0.0</modelVersion>
+    
+    <parent>
+        <groupId>calendarioLaboral</groupId>
+        <artifactId>api</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>infraestructura</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>calendarioLaboral</groupId>
+            <artifactId>dominio</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>calendarioLaboral</groupId>
+            <artifactId>core</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        <!-- RestTemplate para consumir la API de Festivos -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
+</project>
